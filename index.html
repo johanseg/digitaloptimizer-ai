@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Digital Optimizer — AI company</title>
+  <meta name="description" content="Digital Optimizer builds AI that runs the business. Systems that score, operate, and compound." />
+  <link rel="canonical" href="https://digitaloptimizer.ai/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0c0d0b;
+      --bg-2: #141512;
+      --ink: #ece7d8;
+      --muted: #9a9588;
+      --line: rgba(236, 231, 216, 0.12);
+      --accent: #c9a227;
+      --accent-2: #e8d48b;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      font-size: 17px;
+      line-height: 1.55;
+      letter-spacing: -0.01em;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1080px, calc(100% - 40px)); margin: 0 auto; }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 0 8px;
+      border-bottom: 1px solid transparent;
+    }
+    .mark {
+      font-family: "Instrument Serif", Georgia, serif;
+      font-size: 22px;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+    }
+    .mark span { color: var(--accent); }
+    nav { display: flex; gap: 28px; font-size: 14px; color: var(--muted); }
+    nav a { text-decoration: none; }
+    nav a:hover { color: var(--ink); }
+    .hero { padding: 88px 0 72px; }
+    .eyebrow {
+      color: var(--accent-2);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin: 0 0 22px;
+    }
+    h1 {
+      font-family: "Instrument Serif", Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(40px, 7vw, 84px);
+      line-height: 0.96;
+      letter-spacing: -0.03em;
+      margin: 0 0 28px;
+      max-width: 14ch;
+    }
+    h1 em { font-style: italic; color: var(--accent-2); }
+    .lede {
+      max-width: 38em;
+      color: var(--muted);
+      font-size: 19px;
+      margin: 0 0 36px;
+    }
+    .cta { display: flex; flex-wrap: wrap; gap: 14px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .btn.primary { background: var(--ink); color: var(--bg); }
+    .btn.ghost { border: 1px solid var(--line); color: var(--ink); }
+    .btn:hover { opacity: 0.88; }
+    .rule { height: 1px; background: var(--line); border: 0; margin: 0; }
+    section { padding: 72px 0; }
+    h2 {
+      font-family: "Instrument Serif", Georgia, serif;
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      margin: 0 0 18px;
+    }
+    .split { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 48px; align-items: start; }
+    .kicker { color: var(--muted); margin: 0 0 28px; max-width: 36em; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    article {
+      background: var(--bg-2);
+      border: 1px solid var(--line);
+      padding: 22px 22px 26px;
+      min-height: 180px;
+    }
+    article h3 {
+      margin: 0 0 10px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    article p { margin: 0; color: var(--muted); font-size: 15px; }
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
+    }
+    .facts div {
+      background: var(--bg);
+      padding: 28px 24px;
+    }
+    .facts strong {
+      display: block;
+      font-family: "Instrument Serif", Georgia, serif;
+      font-size: 32px;
+      font-weight: 400;
+      margin-bottom: 6px;
+    }
+    .facts span { color: var(--muted); font-size: 14px; }
+    form { display: grid; gap: 12px; max-width: 520px; }
+    input, textarea {
+      width: 100%;
+      background: var(--bg-2);
+      border: 1px solid var(--line);
+      color: var(--ink);
+      padding: 12px 14px;
+      font: inherit;
+      font-size: 15px;
+    }
+    textarea { min-height: 120px; resize: vertical; }
+    button[type="submit"] {
+      justify-self: start;
+      background: var(--accent);
+      color: #1a1404;
+      border: 0;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font: inherit;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    footer {
+      padding: 28px 0 48px;
+      color: var(--muted);
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    footer a { color: var(--ink); }
+    @media (max-width: 800px) {
+      .split, .grid, .facts { grid-template-columns: 1fr; }
+      nav { display: none; }
+      .hero { padding: 56px 0 48px; }
+      section { padding: 48px 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="mark" href="/">Digital Optimizer<span>.</span>ai</a>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#company">Company</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">AI company</p>
+      <h1>We build AI that <em>runs</em> the business.</h1>
+      <p class="lede">Not slide decks. Production systems that score, operate, and compound. Designed, shipped, and kept alive inside real companies.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:roi@johangarcia.com">Talk to us</a>
+        <a class="btn ghost" href="#work">What we build</a>
+      </div>
+    </section>
+  </div>
+
+  <hr class="rule" />
+
+  <div class="wrap">
+    <section id="work">
+      <div class="split">
+        <div>
+          <h2>Systems, not demos.</h2>
+          <p class="kicker">We put models and agents where the work already happens: revenue, ops, and the messy data in between.</p>
+        </div>
+        <div class="grid">
+          <article>
+            <h3>Score</h3>
+            <p>Decide who matters, in time. Ranking and routing that sales and marketing can actually use.</p>
+          </article>
+          <article>
+            <h3>Operate</h3>
+            <p>Agents that do the ops: watch the queue, draft the next action, keep the human in the loop.</p>
+          </article>
+          <article>
+            <h3>Compound</h3>
+            <p>Instrumentation first. Every run leaves data. The system should get cheaper and sharper, not noisier.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="company">
+      <h2>Built in production.</h2>
+      <p class="kicker">Digital Optimizer is led by Johan Garcia, formerly Amazon and PlayStation. Eleven years of shipping systems that have to work on Monday morning.</p>
+      <div class="facts">
+        <div><strong>11+</strong><span>Years shipping</span></div>
+        <div><strong>AMZN / SONY</strong><span>Fortune 500 background</span></div>
+        <div><strong>Live</strong><span>Scoring, ads ops, email intelligence already in market</span></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Start a conversation.</h2>
+      <p class="kicker">If you have a process that should already be software, write us. We will tell you quickly if we are the wrong people.</p>
+      <form action="mailto:roi@johangarcia.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Work email" required />
+        <textarea name="message" placeholder="What should the system do?" required></textarea>
+        <button type="submit">Send to roi@johangarcia.com</button>
+      </form>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> Digital Optimizer</div>
+      <div>Media and growth: <a href="https://digitaloptimizer.agency">digitaloptimizer.agency</a></div>
+    </footer>
+  </div>
+  <script>document.getElementById("y").textContent = new Date().getFullYear()</script>
+</body>
+</html>
